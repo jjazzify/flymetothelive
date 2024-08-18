@@ -2,6 +2,9 @@ package com.jazzify.flymetothlive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import java.util.function.Function;
 
 @SpringBootApplication
 public class FlymetothliveApplication {
@@ -10,4 +13,9 @@ public class FlymetothliveApplication {
 		SpringApplication.run(FlymetothliveApplication.class, args);
 	}
 
+
+	@Bean
+	public Function<String, String> uppercase() {
+		return value -> value.toUpperCase();
+	}
 }
