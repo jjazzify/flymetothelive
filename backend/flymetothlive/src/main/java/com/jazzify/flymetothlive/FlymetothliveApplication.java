@@ -13,9 +13,8 @@ public class FlymetothliveApplication {
 		SpringApplication.run(FlymetothliveApplication.class, args);
 	}
 
-
-	@Bean
-	public Function<String, String> uppercase() {
-		return value -> value.toUpperCase();
-	}
+//	@Bean
+//	public Function<String, String> uppercase() {
+//		return value -> value.toUpperCase();
+//	}
 }
